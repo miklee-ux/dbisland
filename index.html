@@ -1,0 +1,1811 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대부도 다문화 융합 럭셔리 웰니스 투어</title>
+    <meta name="description" content="대부도의 청정 자연과 이색 다문화 융합이 선사하는 오직 당신만을 위한 VIP 프라이빗 웰니스 큐레이션. AI 맞춤 컨시어지와 하이엔드 힐링 투어." />
+    <meta property="og:title" content="대부도 다문화 융합 럭셔리 웰니스 투어" />
+    <meta property="og:description" content="대부도의 청정 자연과 이색 다문화 융합이 선사하는 오직 당신만을 위한 VIP 프라이빗 웰니스 큐레이션. AI 맞춤 컨시어지와 하이엔드 힐링 투어." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+KR:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN for Standalone Browser Execution -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              emeraldDeep: '#0A4D4E',
+              goldSand: '#D4AF37',
+              stoneSoft: '#F4F6F8',
+              oceanMidnight: '#051921',
+            },
+            fontFamily: {
+              serifKr: ['Noto Serif KR', 'serif'],
+              display: ['Cormorant Garamond', 'Noto Serif KR', 'serif'],
+              sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+              script: ['Caveat', 'cursive'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      }
+      .font-serif-kr { font-family: 'Noto Serif KR', serif; }
+      .font-display { font-family: 'Cormorant Garamond', 'Noto Serif KR', serif; }
+      .font-script { font-family: 'Caveat', cursive; }
+      
+      /* Subtle animations */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade {
+        animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-stone-800 antialiased selection:bg-[#0A4D4E] selection:text-white min-h-screen">
+
+    <!-- ========================================== -->
+    <!-- 1. TOP NAVIGATION BAR (Zone 1 - Zone 2 - Zone 3) -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200/80 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-full bg-[#0A4D4E] flex items-center justify-center text-white font-display text-lg tracking-widest shadow-sm">
+            A
+          </div>
+          <span class="font-display text-2xl tracking-[0.2em] text-[#0A4D4E] font-bold group-hover:text-[#063334] transition-colors">
+            AUREA
+          </span>
+          <span class="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold border-l border-stone-300 pl-3 hidden sm:inline-block">
+            DAEBUDO WELLNESS
+          </span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-[13px] tracking-wider uppercase font-medium text-stone-600">
+          <a href="#destinations" class="hover:text-[#0A4D4E] transition-colors hover:underline underline-offset-8">대부도 비전</a>
+          <a href="#problem" class="hover:text-[#0A4D4E] transition-colors hover:underline underline-offset-8">기존 여행 한계</a>
+          <a href="#solution" class="hover:text-[#0A4D4E] transition-colors hover:underline underline-offset-8">독창적 솔루션</a>
+          <a href="#benefits" class="hover:text-[#0A4D4E] transition-colors hover:underline underline-offset-8">VIP 핵심 혜택</a>
+          <a href="#pricing" class="hover:text-[#0A4D4E] transition-colors hover:underline underline-offset-8">얼리버드 가격</a>
+          <a href="#inquiry" class="hover:text-[#0A4D4E] transition-colors hover:underline underline-offset-8">문의 & 상담</a>
+        </nav>
+
+        <!-- Zone 3: Direct Phone & Action CTA -->
+        <div class="flex items-center gap-4">
+          <a href="tel:010-123-4567" class="hidden lg:flex items-center gap-1.5 text-xs text-stone-600 hover:text-[#0A4D4E] font-medium transition-colors">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-[#D4AF37]"></i>
+            <span>010-123-4567</span>
+          </a>
+
+          <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-full bg-[#0A4D4E] hover:bg-[#073637] text-white text-xs font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm hover:shadow-md flex items-center gap-2 group cursor-pointer whitespace-nowrap">
+            <span>VIP 투어 신청</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform text-[#D4AF37]"></i>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-stone-700 hover:text-[#0A4D4E] transition-colors" aria-label="Toggle Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-5 space-y-4 text-sm font-medium animate-fade">
+        <a href="#destinations" onclick="toggleMobileMenu()" class="block text-stone-700 hover:text-[#0A4D4E]">대부도 비전</a>
+        <a href="#problem" onclick="toggleMobileMenu()" class="block text-stone-700 hover:text-[#0A4D4E]">기존 여행 한계</a>
+        <a href="#solution" onclick="toggleMobileMenu()" class="block text-stone-700 hover:text-[#0A4D4E]">독창적 솔루션</a>
+        <a href="#benefits" onclick="toggleMobileMenu()" class="block text-stone-700 hover:text-[#0A4D4E]">VIP 핵심 혜택</a>
+        <a href="#pricing" onclick="toggleMobileMenu()" class="block text-stone-700 hover:text-[#0A4D4E]">얼리버드 가격</a>
+        <a href="#inquiry" onclick="toggleMobileMenu()" class="block text-stone-700 hover:text-[#0A4D4E]">문의 & 상담</a>
+        <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+          <a href="tel:010-123-4567" class="flex items-center gap-2 text-stone-600 text-xs">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-[#D4AF37]"></i>
+            010-123-4567
+          </a>
+          <button onclick="toggleMobileMenu(); openBookingModal();" class="px-4 py-2 bg-[#0A4D4E] text-white text-xs rounded-full">
+            예약 상담
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 2. HERO SECTION (Santorini Luxury Benchmark) -->
+    <!-- ========================================== -->
+    <section id="destinations" class="relative bg-[#051921] text-white overflow-hidden">
+      <!-- Background Image with Scrim -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/src/assets/images/hero_daebudo_ocean_1791440387392.jpg"
+          alt="대부도 럭셔리 오션 웰니스 전경"
+          referrerpolicy="no-referrer"
+          class="w-full h-full object-cover object-center brightness-[0.82] scale-[1.02] transition-transform duration-1000"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#04141B]/95 via-[#04141B]/75 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#04141B] via-transparent to-black/30"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 pt-12 pb-28 lg:pt-20 lg:pb-36 min-h-[720px] flex flex-col justify-between">
+        <!-- Eyebrow -->
+        <div class="flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-[#D4AF37] font-semibold">
+          <span>MORE THAN A DESTINATION</span>
+          <span class="w-8 h-[1px] bg-[#D4AF37]/60"></span>
+          <span>VIP PRIVATE WELLNESS CURATION</span>
+        </div>
+
+        <!-- Hero Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center my-auto py-8">
+          <!-- Left Column -->
+          <div class="lg:col-span-8 space-y-6">
+            <div class="space-y-2">
+              <span id="heroSubtitle" class="font-display italic text-2xl lg:text-3xl text-stone-300 block font-light tracking-wide">
+                Live a Brighter Blue
+              </span>
+              <h1 id="heroTitle" class="font-serif-kr text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.25] text-balance">
+                대부도의 청정 바다와 이색 다문화가 빚어낸<br />오직 당신만을 위한 VIP 프라이빗 웰니스
+              </h1>
+            </div>
+
+            <p id="heroDesc" class="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+              복잡한 일상을 벗어나 대부도의 청명한 바다 향기와 다문화 고유의 미식·힐링 프로그램으로 심신을 온전히 치유하세요. AI 기술 기반 맞춤형 컨시어지가 잊지 못할 단 하나의 휴식을 선사합니다.
+            </p>
+
+            <div class="pt-4 flex flex-wrap items-center gap-6">
+              <button onclick="openBookingModal()" class="px-8 py-4 rounded-full bg-[#0A4D4E] hover:bg-[#083b3c] text-white text-sm font-semibold tracking-wider transition-all duration-300 shadow-xl shadow-[#0A4D4E]/30 flex items-center gap-3 group border border-white/10 hover:border-[#D4AF37]/50 cursor-pointer">
+                <span>VIP 프라이빗 투어 한정 체험 신청하기</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 text-[#D4AF37] transition-transform"></i>
+              </button>
+
+              <a href="#problem" class="px-5 py-4 text-xs uppercase tracking-widest text-stone-300 hover:text-white transition-colors flex items-center gap-2 group">
+                <span>프로그램 스토리 보기</span>
+                <span class="w-4 h-[1px] bg-stone-500 group-hover:w-8 group-hover:bg-[#D4AF37] transition-all"></span>
+              </a>
+            </div>
+
+            <!-- Slide Controller (Santorini 01 / 03 layout) -->
+            <div class="pt-8 flex items-center gap-6 text-xs text-stone-400">
+              <div class="flex items-center gap-2 font-mono tracking-widest text-white">
+                <span id="heroSlideNum" class="text-[#D4AF37] font-bold">01</span>
+                <span class="text-stone-500">/</span>
+                <span>03</span>
+              </div>
+              <span id="heroSlideTag" class="text-[11px] uppercase tracking-wider text-stone-300">
+                ISLANDS · OCEAN · NATURE
+              </span>
+              <div class="flex items-center gap-2 ml-4">
+                <button onclick="prevHeroSlide()" class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 text-stone-300 hover:text-white transition-colors" aria-label="Previous Slide">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button onclick="nextHeroSlide()" class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 text-stone-300 hover:text-white transition-colors" aria-label="Next Slide">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Floating Curated Luxury Card -->
+          <div class="lg:col-span-4 flex justify-center lg:justify-end">
+            <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-sm w-full shadow-2xl text-stone-100">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
+                <div class="flex items-center gap-2 text-[#D4AF37]">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  <span class="text-xs uppercase tracking-widest font-semibold">Bespoke Curation</span>
+                </div>
+                <span class="text-[11px] font-mono text-stone-400">선착순 5팀 한정</span>
+              </div>
+
+              <div class="space-y-3">
+                <p id="heroQuote" class="font-serif italic text-lg text-white">
+                  "Good People, Brighter Places"
+                </p>
+                <p class="text-xs text-stone-300 leading-relaxed font-light">
+                  대부도 해안의 조용한 파도 소리 속에서 펼쳐지는 1:1 맞춤 스파와 세계 각국의 힐링 티 의식. 단 4~6인만을 위한 온전한 독립 공간을 제공합니다.
+                </p>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-stone-300">
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-[#D4AF37]"></i>
+                  <span>만족도 98% 검증</span>
+                </div>
+                <span class="text-[#D4AF37] font-semibold">30% 얼리버드 혜택</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benchmark Organic Beige Wave Transition -->
+      <div class="relative z-20 bg-[#FAF8F5] text-stone-800 pt-10 pb-6 rounded-t-[2.5rem] lg:rounded-t-[3.5rem] border-t border-stone-200/60 shadow-[0_-15px_30px_rgba(0,0,0,0.1)]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="hidden md:block w-32">
+            <span class="text-[11px] uppercase tracking-[0.2em] text-stone-400 font-medium">
+              EXCLUSIVE SANCTUARY
+            </span>
+          </div>
+
+          <div class="text-center">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl tracking-[0.35em] text-[#0A4D4E] font-medium uppercase">
+              D A E B U D O
+            </h2>
+            <div class="flex items-center justify-center gap-3 text-xs tracking-[0.3em] text-[#D4AF37] font-semibold mt-1">
+              <span class="w-8 h-[1px] bg-[#D4AF37]/50"></span>
+              <span>K O R E A</span>
+              <span class="w-8 h-[1px] bg-[#D4AF37]/50"></span>
+            </div>
+          </div>
+
+          <div class="text-center md:text-right">
+            <span class="text-xs uppercase tracking-[0.25em] text-stone-500 font-medium block">
+              SLOWER DAYS
+            </span>
+            <span class="text-xs uppercase tracking-[0.25em] text-[#0A4D4E] font-semibold block">
+              BRIGHTER YOU
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. EDITORIAL SHOWCASE (Santorini Polaroid Triad) -->
+    <!-- ========================================== -->
+    <section class="bg-[#FAF8F5] pt-6 pb-20 border-b border-stone-200/70">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+          <!-- Left Text -->
+          <div class="lg:col-span-4 space-y-4">
+            <span class="text-[11px] uppercase tracking-[0.25em] text-[#D4AF37] font-semibold block">
+              TIMELESS HEALING SANCTUARY
+            </span>
+            <h3 class="font-display text-3xl sm:text-4xl text-[#0A4D4E] font-bold tracking-tight">
+              TIMELESS<br />BEAUTY
+            </h3>
+            <p class="text-stone-600 text-sm leading-relaxed font-light">
+              대부도의 드넓은 갯벌과 맑은 파도 소리, 이국적인 다문화의 색채가 당신의 일상에 깊은 쉼표를 선사합니다. 오직 단 하나의 프라이빗 큐레이션을 만나보세요.
+            </p>
+            <div class="pt-2">
+              <button onclick="openBookingModal()" class="group flex items-center gap-2 text-xs font-semibold tracking-wider text-[#0A4D4E] hover:text-[#063334] transition-colors cursor-pointer">
+                <span>대부도 프라이빗 투어 둘러보기</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-[#D4AF37]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Image Triad -->
+          <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+            <!-- Card 1 with handwritten note -->
+            <div class="relative group">
+              <div class="overflow-hidden rounded-xl shadow-md border border-stone-200 bg-white p-2 transition-transform duration-300 group-hover:-translate-y-1">
+                <div class="aspect-[3/4] overflow-hidden rounded-lg relative">
+                  <img
+                    src="/src/assets/images/spa_private_wellness_1791440404318.jpg"
+                    alt="프라이빗 오션 하이드로 스파"
+                    referrerpolicy="no-referrer"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80';"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-3 left-3 text-white">
+                    <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4AF37] block">PRIVATE SPA</span>
+                    <span class="text-xs font-serif-kr font-bold">오션 프라이빗 스파</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -bottom-7 -left-2 transform -rotate-6 z-10 pointer-events-none">
+                <span class="font-script text-2xl sm:text-3xl text-[#0A4D4E] font-bold drop-shadow-sm">
+                  Same views. A different you.
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group">
+              <div class="overflow-hidden rounded-xl shadow-md border border-stone-200 bg-white p-2 transition-transform duration-300 group-hover:-translate-y-1">
+                <div class="aspect-[3/4] overflow-hidden rounded-lg relative">
+                  <img
+                    src="/src/assets/images/dining_multicultural_fusion_1791440416788.jpg"
+                    alt="다문화 융합 힐링 미식 코스"
+                    referrerpolicy="no-referrer"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80';"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-3 left-3 text-white">
+                    <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4AF37] block">GASTRONOMY</span>
+                    <span class="text-xs font-serif-kr font-bold">로컬 융합 파인다이닝</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold block">EXPLORE</span>
+                <span class="text-xs font-medium text-stone-800">ICONIC TASTE & WINE</span>
+                <div class="w-5 h-[1px] bg-stone-300 mt-1"></div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group">
+              <div class="overflow-hidden rounded-xl shadow-md border border-stone-200 bg-white p-2 transition-transform duration-300 group-hover:-translate-y-1">
+                <div class="aspect-[3/4] overflow-hidden rounded-lg relative">
+                  <img
+                    src="/src/assets/images/sunset_tea_therapy_1791440427500.jpg"
+                    alt="황금빛 노을 티 테라피"
+                    referrerpolicy="no-referrer"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80';"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-3 left-3 text-white">
+                    <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4AF37] block">MEDITATION</span>
+                    <span class="text-xs font-serif-kr font-bold">석양 해안 티 테라피</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold block">TASTE</span>
+                <span class="text-xs font-medium text-stone-800">SERENE MINDFUL LIFE</span>
+                <div class="w-5 h-[1px] bg-stone-300 mt-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Bottom Bar -->
+        <div class="mt-14 pt-6 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+          <div class="flex items-center gap-3">
+            <span class="font-display tracking-[0.2em] uppercase font-bold text-[#0A4D4E]">AUREA</span>
+            <span class="w-8 h-[1px] bg-stone-300"></span>
+            <span class="tracking-widest uppercase text-stone-600">TRAVEL DEEPER · LIVE BRIGHTER</span>
+          </div>
+
+          <a href="#problem" class="flex items-center gap-2 text-stone-600 hover:text-[#0A4D4E] transition-colors group cursor-pointer">
+            <span class="text-[11px] tracking-widest uppercase font-medium">DISCOVER THE STORY</span>
+            <div class="w-7 h-7 rounded-full border border-stone-300 flex items-center justify-center group-hover:border-[#0A4D4E] group-hover:bg-[#0A4D4E] group-hover:text-white transition-all">
+              <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. PROBLEM SECTION (문제 정의) -->
+    <!-- ========================================== -->
+    <section id="problem" class="py-24 bg-white text-stone-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-[#0A4D4E] uppercase">
+            <span>THE CHALLENGE</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>문제 정의</span>
+          </div>
+
+          <h2 class="font-serif-kr text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight leading-tight text-balance">
+            반복되는 단조로운 여행,<br />
+            혹시 대부도에서 이런 답답함을 느끼지 않으셨나요?
+          </h2>
+
+          <p class="text-stone-500 text-sm sm:text-base leading-relaxed font-light">
+            많은 이들이 바다를 찾아 대부도로 향하지만, 마주하는 것은 언제나 똑같은 풍경과 혼잡함이었습니다.
+          </p>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Problem 01 -->
+          <div class="bg-[#F4F6F8] rounded-2xl p-8 border border-stone-200/80 transition-all duration-300 hover:shadow-lg hover:border-stone-300 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="font-display text-3xl font-light text-stone-400 group-hover:text-[#0A4D4E] transition-colors">01</span>
+                <span class="text-xs text-stone-500 font-medium tracking-wider">공급자 중심의 획일화</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-serif-kr text-xl font-bold text-stone-900 group-hover:text-[#0A4D4E] transition-colors">
+                  천편일률적인 관광 코스
+                </h3>
+                <p class="text-xs font-semibold text-[#D4AF37] leading-snug">
+                  매번 똑같은 조개구이집, 뻔한 대형 카페 투어에 지치셨나요?
+                </p>
+              </div>
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                주말마다 북적이는 인파와 판에 박힌 코스로 인해 여행을 다녀와도 오히려 피로만 쌓이는 경험을 하셨을 것입니다. 진정한 회복이 없는 소비성 관광의 악순환입니다.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-stone-200 flex items-center justify-between text-xs text-stone-500">
+              <span class="text-[11px] uppercase tracking-wider">Traditional Experience</span>
+              <span class="text-stone-400">한계와 피로도 가중</span>
+            </div>
+          </div>
+
+          <!-- Problem 02 -->
+          <div class="bg-[#F4F6F8] rounded-2xl p-8 border border-stone-200/80 transition-all duration-300 hover:shadow-lg hover:border-stone-300 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="font-display text-3xl font-light text-stone-400 group-hover:text-[#0A4D4E] transition-colors">02</span>
+                <span class="text-xs text-stone-500 font-medium tracking-wider">VIP 프라이빗 공간 결핍</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-serif-kr text-xl font-bold text-stone-900 group-hover:text-[#0A4D4E] transition-colors">
+                  프리미엄 힐링의 부재
+                </h3>
+                <p class="text-xs font-semibold text-[#D4AF37] leading-snug">
+                  소규모 VIP 그룹이나 기업 프라이빗 단체를 위한 품격 있는 휴식의 한계
+                </p>
+              </div>
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                가족, 경영진 워크숍, 소중한 지인과의 4~6인 프라이빗 모임에서 조용하고 수준 높은 스파나 프라이빗 다이닝을 찾기란 쉽지 않았습니다.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-stone-200 flex items-center justify-between text-xs text-stone-500">
+              <span class="text-[11px] uppercase tracking-wider">Standard Group Travel</span>
+              <span class="text-stone-400">품격 힐링 부재</span>
+            </div>
+          </div>
+
+          <!-- Problem 03 -->
+          <div class="bg-[#F4F6F8] rounded-2xl p-8 border border-stone-200/80 transition-all duration-300 hover:shadow-lg hover:border-stone-300 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="font-display text-3xl font-light text-stone-400 group-hover:text-[#0A4D4E] transition-colors">03</span>
+                <span class="text-xs text-stone-500 font-medium tracking-wider">지역 자원 융합 부재</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-serif-kr text-xl font-bold text-stone-900 group-hover:text-[#0A4D4E] transition-colors">
+                  겉핥기식 로컬 여행
+                </h3>
+                <p class="text-xs font-semibold text-[#D4AF37] leading-snug">
+                  대부도의 천혜 자연과 이색적인 다문화 자원이 단절된 채 방치
+                </p>
+              </div>
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light pt-2">
+                서해안의 수려한 갯벌·해송림 자연 자원과 안산 대부도의 다문화 문화 인적 인프라가 유기적으로 엮이지 못해 피상적인 드라이브 여행에 머물러 있었습니다.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-stone-200 flex items-center justify-between text-xs text-stone-500">
+              <span class="text-[11px] uppercase tracking-wider">Shallow Local Trip</span>
+              <span class="text-stone-400">자원 연결성 단절</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-stone-50 via-stone-100 to-stone-50 border border-stone-200 text-center max-w-4xl mx-auto">
+          <p class="font-serif-kr text-stone-800 text-sm sm:text-base font-medium">
+            "이제 뻔한 주말 나들이를 넘어, <span class="text-[#0A4D4E] font-bold">오직 소수만을 위해 설계된 품격 있는 회복</span>이 필요할 때입니다."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. SOLUTION SECTION (솔루션 제시) -->
+    <!-- ========================================== -->
+    <section id="solution" class="py-24 bg-[#F4F6F8] text-stone-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-[#0A4D4E] uppercase">
+            <span>THE INNOVATIVE SOLUTION</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>솔루션 제시</span>
+          </div>
+
+          <h2 class="font-serif-kr text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight leading-tight text-balance">
+            대부도 다문화 융합 럭셔리 웰니스 투어 디렉터가<br />
+            제안하는 독창적인 힐링 솔루션
+          </h2>
+
+          <p class="text-stone-500 text-sm sm:text-base leading-relaxed font-light">
+            자연, 다문화, 인공지능, 그리고 정밀한 원가 설계를 결합해 대부도 여행의 새로운 기준을 제시합니다.
+          </p>
+        </div>
+
+        <!-- Pillar Switcher Buttons -->
+        <div class="mt-12 flex items-center justify-center gap-2 sm:gap-4 flex-wrap">
+          <button id="solBtn0" onclick="switchSolution(0)" class="px-5 py-3 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 bg-[#0A4D4E] text-white shadow-md">
+            <span class="font-mono text-xs text-[#D4AF37]">01</span>
+            <span>자연 × 다문화 융합</span>
+          </button>
+          <button id="solBtn1" onclick="switchSolution(1)" class="px-5 py-3 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 bg-white text-stone-600 hover:text-stone-900 border border-stone-200">
+            <span class="font-mono text-xs text-stone-400">02</span>
+            <span>AI 감성 컨시어지</span>
+          </button>
+          <button id="solBtn2" onclick="switchSolution(2)" class="px-5 py-3 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 bg-white text-stone-600 hover:text-stone-900 border border-stone-200">
+            <span class="font-mono text-xs text-stone-400">03</span>
+            <span>정밀 원가 하이엔드</span>
+          </button>
+        </div>
+
+        <!-- Solution Details Box -->
+        <div class="mt-8 bg-white rounded-2xl p-8 sm:p-12 border border-stone-200 shadow-sm transition-all duration-300">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <!-- Left Info -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="space-y-2">
+                <span id="solPillarTag" class="text-xs font-mono tracking-widest text-[#D4AF37] font-semibold">
+                  SOLUTION PILLAR 01
+                </span>
+                <h3 id="solTitle" class="font-serif-kr text-2xl sm:text-3xl font-bold text-stone-900 leading-snug">
+                  대부도 자연 자원 × 다문화 네트워크의 완벽한 융합
+                </h3>
+                <p id="solSubtitle" class="text-xs sm:text-sm font-medium text-[#0A4D4E]">
+                  해안길 오션 웰니스와 글로벌 힐링 문화의 하모니
+                </p>
+              </div>
+
+              <p id="solDesc" class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                대부도의 숨겨진 해안길 오션 웰니스와 지역 다문화 공동체가 보유한 이색 미식·허브 티 테라피 문화를 유기적으로 결합했습니다. 국내 어디서도 경험할 수 없었던 독창적인 치유 프로그램을 제공합니다.
+              </p>
+
+              <div id="solHighlights" class="space-y-3 pt-2">
+                <div class="flex items-start gap-3">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-[#0A4D4E] shrink-0 mt-0.5"></i>
+                  <span class="text-xs sm:text-sm text-stone-700 font-medium">단독 해안 오션 프라이빗 워킹 & 사운드 테라피</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-[#0A4D4E] shrink-0 mt-0.5"></i>
+                  <span class="text-xs sm:text-sm text-stone-700 font-medium">다문화 아티잔 공동체와의 독점적 힐링 협업</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-[#0A4D4E] shrink-0 mt-0.5"></i>
+                  <span class="text-xs sm:text-sm text-stone-700 font-medium">바다 바람과 로컬 약초를 활용한 시그니처 블렌딩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Box -->
+            <div class="lg:col-span-5 bg-[#FAF8F5] rounded-xl p-8 border border-stone-200 space-y-6">
+              <div class="border-b border-stone-200/80 pb-4">
+                <span id="solMetricLabel" class="text-xs uppercase tracking-wider text-stone-400 block font-mono">
+                  차별화 지수
+                </span>
+                <span id="solMetricValue" class="font-display text-2xl sm:text-3xl font-bold text-[#0A4D4E] mt-1 block">
+                  100% 독점 코스
+                </span>
+              </div>
+
+              <div class="space-y-3 text-xs text-stone-600 font-light leading-relaxed">
+                <p>
+                  대부도 현지 주민 공동체와의 지속 가능한 상생 협약과 철저한 품질 감리를 통해 언제나 한결같은 VIP 만족도를 보장합니다.
+                </p>
+                <div class="p-4 rounded-lg bg-white border border-stone-200">
+                  <span class="text-[11px] font-semibold text-stone-800 block mb-1">디렉터 약속</span>
+                  <span class="text-stone-500 text-xs">
+                    "품질과 힐링의 깊이에만 오롯이 투자하여, 당신의 단 하루가 인생의 전환점이 되도록 설계합니다."
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. BENEFITS SECTION (핵심 혜택 & AI 시뮬레이터) -->
+    <!-- ========================================== -->
+    <section id="benefits" class="py-24 bg-white text-stone-800 border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-[#0A4D4E] uppercase">
+            <span>CORE VIP PRIVILEGES</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>핵심 기능 및 혜택</span>
+          </div>
+
+          <h2 class="font-serif-kr text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight leading-tight text-balance">
+            VIP 고객이 경험하게 될 3가지 핵심 혜택
+          </h2>
+
+          <p className="text-stone-500 text-sm sm:text-base leading-relaxed font-light">
+            단 1초의 낭비 없이 완벽하게 조율된 최고급 프라이빗 힐링의 정수를 선사합니다.
+          </p>
+        </div>
+
+        <!-- 3 Big Benefit Cards -->
+        <div class="mt-16 space-y-12">
+          <!-- Benefit 1 -->
+          <div class="rounded-2xl border border-stone-200 overflow-hidden bg-[#FAF8F5] grid grid-cols-1 lg:grid-cols-12 items-center shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="lg:col-span-5 h-72 sm:h-80 lg:h-full relative overflow-hidden">
+              <img
+                src="/src/assets/images/spa_private_wellness_1791440404318.jpg"
+                alt="프라이빗 1:1 맞춤형 웰니스 코스"
+                referrerpolicy="no-referrer"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80';"
+              />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-semibold text-[#0A4D4E]">
+                BENEFIT 01
+              </div>
+            </div>
+            <div class="lg:col-span-7 p-8 sm:p-12 space-y-5">
+              <div class="space-y-1">
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37]">4~6인 전용 독점 공간</span>
+                <h3 class="font-serif-kr text-2xl sm:text-3xl font-bold text-stone-900">
+                  프라이빗 1:1 맞춤형 웰니스 코스
+                </h3>
+              </div>
+              <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                다른 불특정 다수 팀과 섞이지 않는 완전한 독립 공간에서 프라이빗 하이드로 스파와 다문화 허브 티 테라피를 만끽합니다. 개별 체질에 맞춰 큐레이션된 에센셜 오일과 온천 미네랄 입욕이 깊은 이완을 돕습니다.
+              </p>
+              <div class="space-y-2 pt-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">단독 사용 해안 프라이빗 스파 풀</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">글로벌 아티잔 티 마스터의 1:1 티 테라피</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">개인 체질 맞춤 힐링 사운드 바스</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="rounded-2xl border border-stone-200 overflow-hidden bg-[#FAF8F5] grid grid-cols-1 lg:grid-cols-12 items-center shadow-sm hover:shadow-md transition-all duration-300 lg:grid-flow-dense">
+            <div class="lg:col-span-5 lg:col-start-8 h-72 sm:h-80 lg:h-full relative overflow-hidden">
+              <img
+                src="/src/assets/images/dining_multicultural_fusion_1791440416788.jpg"
+                alt="오감 만족 다문화 융합 힐링 미식"
+                referrerpolicy="no-referrer"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80';"
+              />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-semibold text-[#0A4D4E]">
+                BENEFIT 02
+              </div>
+            </div>
+            <div class="lg:col-span-7 lg:col-start-1 p-8 sm:p-12 space-y-5">
+              <div class="space-y-1">
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37]">로컬 제철 식재료 × 글로벌 셰프</span>
+                <h3 class="font-serif-kr text-2xl sm:text-3xl font-bold text-stone-900">
+                  오감 만족 다문화 융합 힐링 미식
+                </h3>
+              </div>
+              <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                서해 대부도의 청정 갯벌과 바다가 키워낸 신선한 해산물과 로컬 농산물에 다문화 셰프의 감각적인 조리 철학을 융합했습니다. 인공 감미료를 배제하고 자연의 순수한 풍미로 채운 웰빙 파인다이닝 코스입니다.
+              </p>
+              <div class="space-y-2 pt-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">대부도 당일 직송 해양 식재료 5코스</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">이색 동서양 허브 마리아주 페어링</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">글루텐프리 & 맞춤 알러지 케어 식단</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="rounded-2xl border border-stone-200 overflow-hidden bg-[#FAF8F5] grid grid-cols-1 lg:grid-cols-12 items-center shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="lg:col-span-5 h-72 sm:h-80 lg:h-full relative overflow-hidden">
+              <img
+                src="/src/assets/images/sunset_tea_therapy_1791440427500.jpg"
+                alt="AI 소장용 헌정 힐링 영상 제작"
+                referrerpolicy="no-referrer"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80';"
+              />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-mono font-semibold text-[#0A4D4E]">
+                BENEFIT 03
+              </div>
+            </div>
+            <div class="lg:col-span-7 p-8 sm:p-12 space-y-5">
+              <div class="space-y-1">
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37]">영원히 기억될 감성 미디어 아트</span>
+                <h3 class="font-serif-kr text-2xl sm:text-3xl font-bold text-stone-900">
+                  AI 소장용 헌정 힐링 영상 제작
+                </h3>
+              </div>
+              <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                전문 영상 디렉터와 생성형 AI 미디어 랩이 협업하여 투어 동안 기록된 당신과 동행자의 찬란한 순간을 감성 시네마틱 4K 미디어 아트와 프라이빗 영상 앨범으로 헌정 제작해 드립니다.
+              </p>
+              <div class="space-y-2 pt-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">시네마틱 4K 드론 및 스냅 감성 촬영</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">AI 색감 보정 및 맞춤 사운드트랙 믹싱</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-[#0A4D4E]/10 flex items-center justify-center shrink-0">
+                    <i data-lucide="check" class="w-3 h-3 text-[#0A4D4E]"></i>
+                  </div>
+                  <span class="text-xs sm:text-sm font-medium text-stone-800">평생 소장 가능한 프라이빗 디지털 아카이브</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive AI Itinerary Simulator Box -->
+        <div class="mt-20 rounded-2xl bg-[#051921] text-white p-8 sm:p-12 border border-white/10 shadow-xl">
+          <div class="max-w-3xl mx-auto text-center space-y-3">
+            <div class="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-[#D4AF37] uppercase">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              <span>AI CURATION PREVIEW</span>
+            </div>
+            <h3 class="font-serif-kr text-2xl sm:text-3xl font-bold text-white">
+              AI 맞춤 웰니스 여정 시뮬레이터
+            </h3>
+            <p class="text-xs sm:text-sm text-stone-300 font-light">
+              원하시는 힐링 테마를 선택해보세요. 인공지능이 최적의 시간별 VIP 힐링 스케줄을 미리 제안해 드립니다.
+            </p>
+          </div>
+
+          <div class="mt-8 flex justify-center gap-3 flex-wrap">
+            <button id="itinTab0" onclick="switchItinerary(0)" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer bg-[#0A4D4E] text-white border border-[#D4AF37]">
+              🌊 딥 릴랙스 & 해안 스파
+            </button>
+            <button id="itinTab1" onclick="switchItinerary(1)" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer bg-white/10 text-stone-300 hover:bg-white/20">
+              🍽️ 다문화 미식 & 오가닉 티
+            </button>
+            <button id="itinTab2" onclick="switchItinerary(2)" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer bg-white/10 text-stone-300 hover:bg-white/20">
+              🌅 서해 낙조 & 미디어 아트
+            </button>
+          </div>
+
+          <div id="itinStepsContainer" class="mt-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-4">
+            <!-- Populated via Javascript -->
+          </div>
+
+          <div class="mt-10 text-center">
+            <button onclick="openBookingModal()" class="px-7 py-3 rounded-full bg-[#D4AF37] hover:bg-[#bfa030] text-stone-900 text-xs font-bold tracking-wider uppercase transition-all shadow-lg cursor-pointer">
+              이 맞춤 코스로 VIP 예약 상담 신청하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. TRUST SECTION (신뢰 구축) -->
+    <!-- ========================================== -->
+    <section class="py-24 bg-[#FAF8F5] text-stone-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-[#0A4D4E] uppercase">
+            <span>PROVEN CREDIBILITY</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>신뢰 구축</span>
+          </div>
+
+          <h2 class="font-serif-kr text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight leading-tight text-balance">
+            검증된 계획과 탄탄한 지역 네트워크로<br />
+            당신의 여정에 신뢰를 더합니다
+          </h2>
+
+          <p class="text-stone-500 text-sm sm:text-base leading-relaxed font-light">
+            단순한 아이디어가 아닌, 실제 VIP 파일럿 운영과 공식 상생 협력망으로 완성되었습니다.
+          </p>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Trust 1 -->
+          <div class="bg-white rounded-2xl p-8 border border-stone-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="w-12 h-12 rounded-xl bg-[#0A4D4E]/10 flex items-center justify-center text-[#0A4D4E]">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-serif-kr text-xl font-bold text-stone-900">
+                  MVP 파일럿 운영 검증 완료
+                </h3>
+                <p class="text-xs font-semibold text-[#D4AF37]">
+                  만족도 98% 경이로운 기록 달성
+                </p>
+              </div>
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light">
+                소규모 VIP 및 라이프스타일 인플루언서 초청단을 대상으로 진행한 1회성 주말 프리미엄 투어 결과, 힐링 체감 및 식음 부문 전원 최상위 평가를 획득했습니다.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-stone-100 flex items-baseline justify-between">
+              <span class="text-[11px] text-stone-400 uppercase tracking-wider font-mono">VIP 파일럿 종합 만족도</span>
+              <span class="font-display text-2xl font-bold text-[#0A4D4E]">98%</span>
+            </div>
+          </div>
+
+          <!-- Trust 2 -->
+          <div class="bg-white rounded-2xl p-8 border border-stone-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="w-12 h-12 rounded-xl bg-[#0A4D4E]/10 flex items-center justify-center text-[#0A4D4E]">
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-serif-kr text-xl font-bold text-stone-900">
+                  대부도 다문화 공동체 네트워크 협약
+                </h3>
+                <p class="text-xs font-semibold text-[#D4AF37]">
+                  탄탄한 지역 주민회 및 글로벌 아티잔 연대
+                </p>
+              </div>
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light">
+                대부도 원주민 공동체와 안산 다문화 이주 셰프·공예가 그룹 간의 긴밀한 상생 협력 협약을 체결하여 지속 가능하고 진정성 있는 문화 콘텐츠를 수급합니다.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-stone-100 flex items-baseline justify-between">
+              <span class="text-[11px] text-stone-400 uppercase tracking-wider font-mono">직접 연계 파트너십 구축</span>
+              <span class="font-display text-2xl font-bold text-[#0A4D4E]">100%</span>
+            </div>
+          </div>
+
+          <!-- Trust 3 -->
+          <div class="bg-white rounded-2xl p-8 border border-stone-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+            <div class="space-y-5">
+              <div class="w-12 h-12 rounded-xl bg-[#0A4D4E]/10 flex items-center justify-center text-[#0A4D4E]">
+                <i data-lucide="building-2" class="w-6 h-6"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-serif-kr text-xl font-bold text-stone-900">
+                  지자체 및 로컬 상인회 공식 연계
+                </h3>
+                <p class="text-xs font-semibold text-[#D4AF37]">
+                  안산시 관광과 & 경기관광공사 협력
+                </p>
+              </div>
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-light">
+                안산시 관광과, 경기관광공사 및 대부도 로컬 상인회와의 전략적 협업을 통해 합법적이고 안전하며 검증된 B2B/B2C 결합 고품격 투어 상품을 구축했습니다.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-stone-100 flex items-baseline justify-between">
+              <span class="text-[11px] text-stone-400 uppercase tracking-wider font-mono">로컬 상생 거버넌스</span>
+              <span class="font-display text-2xl font-bold text-[#0A4D4E]">공식 협력</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilot Testimonials -->
+        <div class="mt-16 max-w-4xl mx-auto bg-white rounded-2xl p-8 sm:p-10 border border-stone-200">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="flex text-[#D4AF37]">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <span class="text-xs font-semibold text-stone-700">VIP 파일럿 참가자 실제 후기</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-stone-100">
+            <div class="space-y-3">
+              <p class="text-xs sm:text-sm text-stone-600 italic leading-relaxed">
+                "대부도에서 이런 프라이빗 스파와 고급 다이닝을 경험할 줄은 상상도 못했습니다. 외부 방해 없이 임원진들과 오롯이 재충전할 수 있어 대만족이었습니다."
+              </p>
+              <div class="pt-2">
+                <span class="text-xs font-bold text-stone-900 block">김*현 VIP 고객</span>
+                <span class="text-[11px] text-stone-400 block">IT 핀테크 대표이사</span>
+              </div>
+            </div>
+            <div class="space-y-3 sm:pl-8 pt-6 sm:pt-0">
+              <p class="text-xs sm:text-sm text-stone-600 italic leading-relaxed">
+                "다문화 티 세레머니와 석양 아래 헌정 영상 퀄리티에 감탄했습니다. 뻔한 관광지가 아닌, 스위스 리조트에 온 듯한 섬세한 배려가 돋보였습니다."
+              </p>
+              <div class="pt-2">
+                <span class="text-xs font-bold text-stone-900 block">이*린 크리에이터</span>
+                <span class="text-[11px] text-stone-400 block">웰니스 힐링 인플루언서</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 8. PRICING & TERMS (가격 및 조건) -->
+    <!-- ========================================== -->
+    <section id="pricing" class="py-24 bg-white text-stone-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-[#0A4D4E] uppercase">
+            <span>LIMITED EARLY BIRD PRIVILEGE</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>가격 및 특별 조건</span>
+          </div>
+
+          <h2 class="font-serif-kr text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight leading-tight text-balance">
+            베타 테스터 및 초기 고객만을 위한 특별한 혜택
+          </h2>
+
+          <p class="text-stone-500 text-sm sm:text-base leading-relaxed font-light">
+            초기 안정화 및 최고 수준의 서비스 품질 유지를 위해 이번 달은 단 5팀만 한정 예약을 받습니다.
+          </p>
+        </div>
+
+        <!-- Urgency Bar -->
+        <div class="mt-8 max-w-2xl mx-auto bg-amber-50 border border-amber-200/80 rounded-xl p-4 flex items-center justify-between text-xs sm:text-sm text-amber-900">
+          <div class="flex items-center gap-2.5">
+            <i data-lucide="clock" class="w-4 h-4 text-[#D4AF37] shrink-0"></i>
+            <span class="font-medium">
+              이번 달 선착순 5팀 중 <strong class="text-[#0A4D4E] font-bold">잔여 슬롯 2팀</strong> 남았습니다.
+            </span>
+          </div>
+          <span class="font-mono text-xs text-amber-700 font-semibold hidden sm:inline-block">선착순 마감 임박</span>
+        </div>
+
+        <!-- Pricing Comparison Grid -->
+        <div class="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          <!-- Standard -->
+          <div class="rounded-2xl border border-stone-200 bg-[#F4F6F8] p-8 flex flex-col justify-between">
+            <div class="space-y-6">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-stone-500 font-medium block">STANDARD PACKAGE</span>
+                <h3 class="font-serif-kr text-2xl font-bold text-stone-900 mt-1">일반 패키지 (정가)</h3>
+                <p class="text-xs text-stone-500 mt-1">정규 출시 이후 적용되는 일반 이용 고객 패키지</p>
+              </div>
+
+              <div class="pt-4 border-t border-stone-200">
+                <div class="flex items-baseline gap-2">
+                  <span class="font-display text-4xl font-bold text-stone-800">500,000</span>
+                  <span class="text-stone-500 text-sm">원 / 1인</span>
+                </div>
+                <span class="text-xs text-stone-400 block mt-1">기본 웰니스 코스 기준</span>
+              </div>
+
+              <div class="space-y-3 pt-2 text-xs sm:text-sm text-stone-600">
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-stone-400 shrink-0"></i>
+                  <span>기본 웰니스 투어 코스 참여</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-stone-400 shrink-0"></i>
+                  <span>로컬 식재료 웰니스 중식 제공</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-stone-400 shrink-0"></i>
+                  <span>해안 트레킹 및 기본 티 테라피</span>
+                </div>
+                <div class="flex items-center gap-3 text-stone-400 line-through">
+                  <span>VIP 단독 프라이빗 공간 독점 사용</span>
+                </div>
+                <div class="flex items-center gap-3 text-stone-400 line-through">
+                  <span>AI 헌정 시네마틱 영상 무상 제작</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-8 mt-8 border-t border-stone-200">
+              <button disabled class="w-full py-3.5 rounded-xl bg-stone-200 text-stone-500 text-xs font-semibold cursor-not-allowed">
+                정규 패키지 (오픈 예정)
+              </button>
+            </div>
+          </div>
+
+          <!-- Early Bird VIP (Featured) -->
+          <div class="rounded-2xl border-2 border-[#D4AF37] bg-white p-8 flex flex-col justify-between relative shadow-xl">
+            <div class="absolute -top-3.5 right-6 bg-[#D4AF37] text-stone-900 text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-sm flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3 h-3"></i>
+              <span>30% 특별 할인 · 한정 혜택</span>
+            </div>
+
+            <div class="space-y-6">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-[#0A4D4E] font-bold block">EARLY BIRD VIP BETA</span>
+                <h3 class="font-serif-kr text-2xl font-bold text-stone-900 mt-1">얼리버드 베타 VIP 패키지</h3>
+                <p class="text-xs text-[#0A4D4E] font-medium mt-1">선착순 5팀 한정 (팀당 4~6인 전용 독점 코스)</p>
+              </div>
+
+              <div class="pt-4 border-t border-stone-100">
+                <div class="flex items-baseline gap-2">
+                  <span class="font-display text-4xl sm:text-5xl font-bold text-[#0A4D4E]">350,000</span>
+                  <span class="text-stone-600 text-sm font-medium">원 / 1인</span>
+                  <span class="text-xs text-stone-400 line-through ml-2">500,000원</span>
+                </div>
+                <span class="text-xs text-[#D4AF37] font-semibold block mt-1">
+                  1인당 150,000원 절감 + 프리미엄 풀 혜택 적용
+                </span>
+              </div>
+
+              <div class="space-y-3 pt-2 text-xs sm:text-sm text-stone-700">
+                <div class="flex items-center gap-3 font-semibold text-[#0A4D4E]">
+                  <i data-lucide="check" class="w-4 h-4 text-[#D4AF37] shrink-0"></i>
+                  <span>VIP 프라이빗 전용 공간 100% 독점 이용 (4~6인)</span>
+                </div>
+                <div class="flex items-center gap-3 font-semibold text-[#0A4D4E]">
+                  <i data-lucide="check" class="w-4 h-4 text-[#D4AF37] shrink-0"></i>
+                  <span>AI 맞춤 감성 헌정 힐링 영상 4K 무상 제작 (50만원 상당)</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-[#D4AF37] shrink-0"></i>
+                  <span>다문화 마스터 셰프 융합 파인다이닝 코스 & 티 페어링</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-[#D4AF37] shrink-0"></i>
+                  <span>해안 럭셔리 온천 하이드로 스파 & 사운드 테라피</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-[#D4AF37] shrink-0"></i>
+                  <span>디렉터 1:1 전담 맞춤형 컨시어지 케어</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-8 mt-8 border-t border-stone-100">
+              <button onclick="openBookingModal()" class="w-full py-4 rounded-xl bg-[#0A4D4E] hover:bg-[#073839] text-white text-xs sm:text-sm font-bold tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2 group cursor-pointer">
+                <span>얼리버드 30% 혜택으로 신청하기</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 text-[#D4AF37] transition-transform"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Size Calculator -->
+        <div class="mt-14 max-w-3xl mx-auto bg-[#FAF8F5] rounded-2xl p-6 sm:p-8 border border-stone-200">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="space-y-1 text-center sm:text-left">
+              <span class="text-xs font-semibold text-[#0A4D4E] uppercase tracking-wider block">TEAM SIZE CALCULATOR</span>
+              <h4 id="calcTitle" class="font-serif-kr text-base sm:text-lg font-bold text-stone-900">
+                우리 팀(4인) 예상 비용 & 절감 혜택 계산기
+              </h4>
+            </div>
+
+            <div class="flex items-center gap-2 bg-white p-1 rounded-xl border border-stone-200">
+              <button id="sizeBtn4" onclick="setCalcSize(4)" class="px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#0A4D4E] text-white">4인 팀</button>
+              <button id="sizeBtn5" onclick="setCalcSize(5)" class="px-4 py-2 rounded-lg text-xs font-bold transition-all text-stone-600 hover:text-stone-900">5인 팀</button>
+              <button id="sizeBtn6" onclick="setCalcSize(6)" class="px-4 py-2 rounded-lg text-xs font-bold transition-all text-stone-600 hover:text-stone-900">6인 팀</button>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-stone-200/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+            <div class="p-3 bg-white rounded-xl border border-stone-100">
+              <span class="text-[11px] text-stone-400 block">정상가 기준</span>
+              <span id="calcRegular" class="text-base font-semibold text-stone-600 line-through">2,000,000원</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-[#D4AF37]/40 shadow-sm">
+              <span class="text-[11px] text-[#0A4D4E] font-semibold block">VIP 얼리버드 적용가</span>
+              <span id="calcEarly" class="text-lg font-bold text-[#0A4D4E]">1,400,000원</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-emerald-100">
+              <span class="text-[11px] text-emerald-700 font-semibold block">총 절감액 + AI 영상</span>
+              <span id="calcSavings" class="text-base font-bold text-emerald-700">600,000원 절감!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 9. INQUIRY SECTION (서비스 문의 & 직통 폼) -->
+    <!-- ========================================== -->
+    <section id="inquiry" class="py-24 bg-[#F4F6F8] text-stone-800 border-t border-stone-200">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] text-[#0A4D4E] uppercase">
+            <span>DIRECT CONCIERGE DESK</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>서비스 문의</span>
+          </div>
+
+          <h2 class="font-serif-kr text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight leading-tight text-balance">
+            럭셔리 웰니스 투어 관련 궁금한 점이나<br />
+            프라이빗 맞춤 상담이 필요하신가요?
+          </h2>
+
+          <p class="text-stone-500 text-sm sm:text-base leading-relaxed font-light">
+            아래 연락처로 문의해주시면 웰니스 투어 디렉터가 직접 1:1 상담을 도와드립니다.
+          </p>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10 max-w-6xl mx-auto">
+          <!-- Left Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-white rounded-2xl p-8 border border-stone-200/90 shadow-sm space-y-6">
+              <h3 class="font-serif-kr text-xl font-bold text-stone-900 border-b border-stone-100 pb-4">
+                웰니스 투어 디렉터 직통 채널
+              </h3>
+
+              <div class="space-y-5">
+                <a href="tel:010-123-4567" class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 hover:bg-[#0A4D4E]/5 border border-stone-200 transition-colors group">
+                  <div class="w-10 h-10 rounded-full bg-[#0A4D4E] flex items-center justify-center text-white shrink-0 group-hover:bg-[#073637] transition-colors">
+                    <i data-lucide="phone" class="w-4 h-4 text-[#D4AF37]"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] text-stone-400 font-mono uppercase tracking-wider block">TELEPHONE</span>
+                    <span class="text-base font-bold text-stone-900 group-hover:text-[#0A4D4E] transition-colors">010-123-4567</span>
+                    <span class="text-xs text-stone-500 block mt-0.5">터치 시 즉시 전화 상담 연결</span>
+                  </div>
+                </a>
+
+                <a href="mailto:aaa@naver.com" class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 hover:bg-[#0A4D4E]/5 border border-stone-200 transition-colors group">
+                  <div class="w-10 h-10 rounded-full bg-[#0A4D4E] flex items-center justify-center text-white shrink-0 group-hover:bg-[#073637] transition-colors">
+                    <i data-lucide="mail" class="w-4 h-4 text-[#D4AF37]"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] text-stone-400 font-mono uppercase tracking-wider block">EMAIL INQUIRY</span>
+                    <span class="text-base font-bold text-stone-900 group-hover:text-[#0A4D4E] transition-colors">aaa@naver.com</span>
+                    <span class="text-xs text-stone-500 block mt-0.5">맞춤 제안서 및 견적서 요청</span>
+                  </div>
+                </a>
+
+                <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200">
+                  <div class="w-10 h-10 rounded-full bg-[#D4AF37]/20 flex items-center justify-center text-[#D4AF37] shrink-0">
+                    <i data-lucide="clock" class="w-4 h-4 text-stone-800"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] text-stone-400 font-mono uppercase tracking-wider block">SERVICE HOURS</span>
+                    <span class="text-sm font-bold text-stone-800 block">평일 09:00 ~ 18:00</span>
+                    <span class="text-xs text-stone-500 block mt-0.5">주말 및 공휴일은 사전 예약제 운영</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-2 text-xs text-stone-500 leading-relaxed font-light">
+                * 기업 워크숍, VIP 의전, 가족 힐링 등 단체 규모나 특별 식이요법(비건/할랄/알러지) 맞춤 조율이 가능합니다.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-2xl p-8 sm:p-10 border border-stone-200/90 shadow-sm">
+              <div id="inquirySuccess" class="hidden py-12 text-center space-y-4">
+                <div class="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto">
+                  <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-serif-kr text-2xl font-bold text-stone-900">
+                  VIP 상담 문의가 안전하게 접수되었습니다.
+                </h3>
+                <p class="text-stone-600 text-sm max-w-md mx-auto leading-relaxed font-light">
+                  웰니스 투어 디렉터가 남겨주신 연락처로 영업일 기준 2시간 이내에 1:1 맞춤 안내를 드릴 예정입니다.
+                </p>
+                <div class="pt-4">
+                  <button onclick="resetInquiryForm()" class="px-6 py-2.5 rounded-full border border-stone-300 text-xs font-semibold text-stone-700 hover:bg-stone-50 transition-colors">
+                    새로운 문의 작성하기
+                  </button>
+                </div>
+              </div>
+
+              <form id="inquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-5">
+                <div class="border-b border-stone-100 pb-3 mb-4">
+                  <h3 class="font-serif-kr text-xl font-bold text-stone-900">1:1 맞춤 상담 신청서</h3>
+                  <p class="text-xs text-stone-500 mt-1">원하시는 투어 희망 일정과 인원을 알려주시면 최적의 VIP 큐레이션을 제안해 드립니다.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1.5">
+                      성함 / 예약자명 <span class="text-rose-500">*</span>
+                    </label>
+                    <input type="text" id="inqName" placeholder="홍길동" required class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1.5">
+                      연락처 (휴대폰) <span class="text-rose-500">*</span>
+                    </label>
+                    <input type="tel" id="inqPhone" placeholder="010-1234-5678" required class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1.5">
+                      이메일 <span class="text-rose-500">*</span>
+                    </label>
+                    <input type="email" id="inqEmail" placeholder="vip@example.com" required class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1.5">
+                      예상 인원 (4~6인 전용)
+                    </label>
+                    <select id="inqGuests" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E] bg-white">
+                      <option value="4">4인 (VIP 기본 권장)</option>
+                      <option value="5">5인</option>
+                      <option value="6">6인 (프라이빗 정원 마감)</option>
+                      <option value="corporate">기업 VIP 단체 문의 (별도 협의)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1.5">희망 투어 날짜</label>
+                    <input type="date" id="inqDate" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E] bg-white" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1.5">선호 힐링 테마</label>
+                    <select id="inqTheme" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E] bg-white">
+                      <option value="딥 릴랙스 & 오션 스파">딥 릴랙스 & 오션 스파</option>
+                      <option value="다문화 미식 & 오가닉 티">다문화 미식 & 오가닉 티</option>
+                      <option value="서해 낙조 & 미디어 아트">서해 낙조 & 미디어 아트</option>
+                      <option value="전체 융합 풀 코스">전체 융합 풀 코스 (추천)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-stone-700 mb-1.5">특별 요청사항 (선택)</label>
+                  <textarea id="inqMessage" rows="3" placeholder="알러지 유무, 기념일 목적 등 원하시는 요청사항을 자유롭게 기재해주세요." class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E] resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-[#0A4D4E] hover:bg-[#073839] text-white text-xs sm:text-sm font-bold tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer">
+                  <i data-lucide="send" class="w-4 h-4 text-[#D4AF37]"></i>
+                  <span>웰니스 투어 1:1 맞춤 상담 신청하기</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 10. CLOSING & CTA (Deep Ocean Midnight) -->
+    <!-- ========================================== -->
+    <section class="relative bg-[#051921] text-white py-24 sm:py-32 overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[#0A4D4E] blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-[#D4AF37] blur-3xl"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-8">
+        <div class="inline-flex items-center gap-2 text-xs font-mono tracking-[0.3em] text-[#D4AF37] uppercase">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>YOUR TIMELESS SANCTUARY</span>
+        </div>
+
+        <h2 class="font-serif-kr text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.3] text-balance">
+          대부도 바다와 다문화 향연이 주는 완벽한 치유,<br class="hidden sm:inline" />
+          지금 바로 경험해보세요!
+        </h2>
+
+        <p class="text-stone-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-light">
+          단조로운 일상에서 벗어나 당신만을 위해 정밀하게 설계된 럭셔리 웰니스 투어를 신청할 기회입니다. 한정된 인원만 참여 가능한 프라이빗 베타 프로그램이 곧 마감됩니다.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs text-stone-300">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-[#D4AF37]"></i>
+            <span>선착순 5팀 30% 얼리버드</span>
+          </div>
+          <span class="text-stone-600 hidden sm:inline">·</span>
+          <div class="flex items-center gap-2">
+            <i data-lucide="heart" class="w-4 h-4 text-[#D4AF37]"></i>
+            <span>4~6인 단독 프라이빗 스파</span>
+          </div>
+          <span class="text-stone-600 hidden sm:inline">·</span>
+          <div class="flex items-center gap-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-[#D4AF37]"></i>
+            <span>AI 헌정 힐링 영상 4K 무상 제작</span>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <button onclick="openBookingModal()" class="px-10 py-5 rounded-full bg-[#0A4D4E] hover:bg-[#073637] text-white text-sm sm:text-base font-bold tracking-wider uppercase transition-all duration-300 shadow-2xl shadow-[#0A4D4E]/40 border border-[#D4AF37]/50 hover:border-[#D4AF37] flex items-center gap-3 mx-auto group cursor-pointer">
+            <span>지금 바로 VIP 베네핏 받고 투어 신청하기</span>
+            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1.5 text-[#D4AF37] transition-transform"></i>
+          </button>
+        </div>
+
+        <p class="text-stone-400 text-xs font-mono pt-4">
+          * 사전 예약 승인 후 1:1 컨시어지 배정이 진행됩니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 11. QUIET LUXURY FOOTER -->
+    <!-- ========================================== -->
+    <footer class="bg-[#030e13] text-stone-400 py-16 border-t border-white/10 text-xs">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+          <div class="md:col-span-5 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-[#0A4D4E] flex items-center justify-center text-white font-display text-base">A</div>
+              <span class="font-display text-2xl tracking-[0.2em] text-white font-bold">AUREA</span>
+              <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase font-semibold pl-2 border-l border-white/20">
+                DAEBUDO WELLNESS
+              </span>
+            </div>
+            <p class="text-stone-400 text-xs leading-relaxed max-w-sm font-light">
+              대부도 다문화 융합 럭셔리 웰니스 투어<br />
+              청정 자연과 세계 문화의 향연, 소수 VIP만을 위한 하이엔드 힐링 아카이브.
+            </p>
+          </div>
+
+          <div class="md:col-span-3 space-y-3">
+            <span class="text-[11px] uppercase tracking-wider text-stone-200 font-semibold block">EXPERIENCE</span>
+            <ul class="space-y-2 text-stone-400">
+              <li><a href="#destinations" class="hover:text-white transition-colors">대부도 오션 웰니스</a></li>
+              <li><a href="#solution" class="hover:text-white transition-colors">AI 감성 큐레이션</a></li>
+              <li><a href="#benefits" class="hover:text-white transition-colors">VIP 프라이빗 코스</a></li>
+              <li><a href="#pricing" class="hover:text-white transition-colors">얼리버드 혜택</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-4 space-y-3">
+            <span class="text-[11px] uppercase tracking-wider text-stone-200 font-semibold block">CONCIERGE CONTACT</span>
+            <div class="space-y-1.5 text-stone-300">
+              <p>전화: <a href="tel:010-123-4567" class="hover:text-[#D4AF37] text-white font-mono">010-123-4567</a></p>
+              <p>이메일: <a href="mailto:aaa@naver.com" class="hover:text-[#D4AF37] text-white font-mono">aaa@naver.com</a></p>
+              <p>운영 시간: 평일 09:00 ~ 18:00 (주말/공휴일 예약제)</p>
+              <p>위치: 경기도 안산시 단원구 대부도 해안 웰니스 센터</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+          <div>
+            © 2026 AUREA DAEBUDO WELLNESS TOUR. All rights reserved.
+          </div>
+          <div class="flex items-center gap-6">
+            <span class="hover:text-stone-300 cursor-pointer">개인정보처리방침</span>
+            <span>·</span>
+            <span class="hover:text-stone-300 cursor-pointer">이용약관</span>
+            <span>·</span>
+            <span class="hover:text-stone-300 cursor-pointer">책임 한계 및 법적 고지</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- 12. VIP BOOKING MODAL (POPUP) -->
+    <!-- ========================================== -->
+    <div id="bookingModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade">
+      <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-stone-200 relative flex flex-col max-h-[90vh]">
+        <!-- Modal Header -->
+        <div class="bg-[#051921] text-white p-6 relative">
+          <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-stone-400 hover:text-white transition-colors p-1" aria-label="Close modal">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+          <div class="flex items-center gap-2 text-xs font-mono text-[#D4AF37] uppercase tracking-wider mb-1">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>VIP EARLY BIRD PRIVILEGE</span>
+          </div>
+          <h3 id="modalTitle" class="font-serif-kr text-xl sm:text-2xl font-bold">
+            대부도 VIP 프라이빗 투어 신청
+          </h3>
+          <p id="modalSubtitle" class="text-xs text-stone-300 mt-1">
+            선착순 5팀 한정 30% 특별 할인 (1인 350,000원) + AI 헌정 영상
+          </p>
+        </div>
+
+        <!-- Modal Step 1: Form -->
+        <div id="modalStep1" class="p-6 overflow-y-auto space-y-4 text-stone-800">
+          <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1.5 flex items-center justify-between">
+                <span>참여 인원 (4~6인 프라이빗 전용)</span>
+                <span class="text-[#0A4D4E] font-bold">팀당 독점 배정</span>
+              </label>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" onclick="setModalParty(4)" id="modalParty4" class="py-2 rounded-xl text-xs font-semibold border transition-all bg-[#0A4D4E] text-white border-[#0A4D4E]">
+                  4인 팀 (140만원)
+                </button>
+                <button type="button" onclick="setModalParty(5)" id="modalParty5" class="py-2 rounded-xl text-xs font-semibold border transition-all bg-stone-50 text-stone-700 border-stone-200">
+                  5인 팀 (175만원)
+                </button>
+                <button type="button" onclick="setModalParty(6)" id="modalParty6" class="py-2 rounded-xl text-xs font-semibold border transition-all bg-stone-50 text-stone-700 border-stone-200">
+                  6인 팀 (210만원)
+                </button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">예약자명 <span class="text-rose-500">*</span></label>
+                <input type="text" id="modalName" placeholder="홍길동" required class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">연락처 <span class="text-rose-500">*</span></label>
+                <input type="tel" id="modalPhone" placeholder="010-1234-5678" required class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">이메일 주소 <span class="text-rose-500">*</span></label>
+                <input type="email" id="modalEmail" placeholder="vip@example.com" required class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">희망 날짜</label>
+                <input type="date" id="modalDate" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E]" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">선호 웰니스 테마</label>
+              <select id="modalTheme" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#0A4D4E] bg-white">
+                <option value="딥 릴랙스 & 오션 스파">딥 릴랙스 & 오션 스파 (하이드로 테라피)</option>
+                <option value="다문화 미식 & 오가닉 티">다문화 미식 & 오가닉 티 (파인다이닝)</option>
+                <option value="서해 낙조 & 미디어 아트">서해 낙조 & 미디어 아트 (노을 명상)</option>
+              </select>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-[#FAF8F5] border border-stone-200 flex items-center justify-between text-xs">
+              <div>
+                <span class="text-stone-500 block">얼리버드 30% 특가 (<span id="modalSummaryParty">4</span>인)</span>
+                <span id="modalSummaryTotal" class="font-display text-lg font-bold text-[#0A4D4E]">1,400,000원</span>
+              </div>
+              <div class="text-right">
+                <span class="text-[#D4AF37] font-semibold block">무상 혜택</span>
+                <span class="text-stone-600 text-[11px]">AI 헌정 4K 영상 포함</span>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-[#0A4D4E] hover:bg-[#073637] text-white text-xs sm:text-sm font-bold tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer">
+              <span>VIP 얼리버드 예약 확정 요청</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-[#D4AF37]"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Modal Step 2: Confirmation Receipt -->
+        <div id="modalStep2" class="hidden p-6 overflow-y-auto space-y-5 text-center">
+          <div class="w-14 h-14 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto">
+            <i data-lucide="check-circle" class="w-8 h-8"></i>
+          </div>
+
+          <div class="space-y-1">
+            <h4 id="confNameTitle" class="font-serif-kr text-xl font-bold text-stone-900">
+              VIP 투어 신청이 완료되었습니다!
+            </h4>
+            <p class="text-xs text-stone-500">
+              예약 번호: <strong id="confCode" class="font-mono text-[#0A4D4E]">VIP-829103</strong>
+            </p>
+          </div>
+
+          <div class="bg-[#FAF8F5] rounded-xl p-4 text-left text-xs space-y-2 border border-stone-200">
+            <div class="flex justify-between">
+              <span class="text-stone-500">신청 패키지</span>
+              <span class="font-semibold text-stone-900">얼리버드 베타 VIP (30% 할인)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stone-500">예약 인원</span>
+              <span id="confParty" class="font-semibold text-stone-900">4인 프라이빗 팀</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stone-500">선택 테마</span>
+              <span id="confTheme" class="font-semibold text-[#0A4D4E]">딥 릴랙스 & 오션 스파</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stone-500">예상 금액</span>
+              <span id="confTotal" class="font-bold text-[#0A4D4E]">1,400,000원</span>
+            </div>
+          </div>
+
+          <p class="text-xs text-stone-600 leading-relaxed font-light">
+            투어 디렉터가 기재해주신 연락처로 신속히 연락드려 상세 일정 및 웰컴 컨시어지 세팅을 안내해 드리겠습니다.
+          </p>
+
+          <button onclick="closeBookingModal()" class="w-full py-3 rounded-xl bg-[#0A4D4E] text-white text-xs font-semibold cursor-pointer">
+            확인 및 창 닫기
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE JAVASCRIPT CONTROLLERS -->
+    <!-- ========================================== -->
+    <script>
+      // Initialize Lucide icons
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+        renderItinerary(0);
+      });
+
+      // Mobile Menu
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      }
+
+      // Hero Slider State
+      const heroSlides = [
+        {
+          num: '01',
+          tag: 'ISLANDS · OCEAN · NATURE',
+          sub: 'Live a Brighter Blue',
+          title: '대부도의 청정 바다와 이색 다문화가 빚어낸<br />오직 당신만을 위한 VIP 프라이빗 웰니스',
+          desc: '복잡한 일상을 벗어나 대부도의 청명한 바다 향기와 다문화 고유의 미식·힐링 프로그램으로 심신을 온전히 치유하세요. AI 기술 기반 맞춤형 컨시어지가 잊지 못할 단 하나의 휴식을 선사합니다.',
+          quote: '"Good People, Brighter Places"'
+        },
+        {
+          num: '02',
+          tag: 'CULTURE · GASTRONOMY · HEALING',
+          sub: 'Awaken Your Five Senses',
+          title: '대부도 로컬 해양 식재료와<br />다문화 셰프의 감각이 만난 럭셔리 다이닝',
+          desc: '서해의 신선한 갯벌 생명력과 동서양의 정갈한 향신료가 조화롭게 어우러진 프라이빗 코스 요리. 소규모 그룹 전용 오션뷰 다이닝에서 미식의 새로운 지평을 경험하세요.',
+          quote: '"Taste Deeply, Live Freely"'
+        },
+        {
+          num: '03',
+          tag: 'AI CONCIERGE · PRIVATE THERAPY',
+          sub: 'Tailored Only For You',
+          title: '인공지능 정밀 성향 분석과<br />4~6인 전용 프라이빗 하이드로 스파',
+          desc: '다른 팀과의 접촉 없는 완전한 독립형 스파 & 다문화 티 테라피. 귀하의 건강 지표와 기호에 맞춘 1:1 맞춤형 힐링 동선으로 최고의 재생을 약속합니다.',
+          quote: '"Quiet Solitude, Absolute Peace"'
+        }
+      ];
+      let currentHeroIdx = 0;
+
+      function updateHeroDOM() {
+        const s = heroSlides[currentHeroIdx];
+        document.getElementById('heroSlideNum').textContent = s.num;
+        document.getElementById('heroSlideTag').textContent = s.tag;
+        document.getElementById('heroSubtitle').textContent = s.sub;
+        document.getElementById('heroTitle').innerHTML = s.title;
+        document.getElementById('heroDesc').textContent = s.desc;
+        document.getElementById('heroQuote').textContent = s.quote;
+      }
+
+      function nextHeroSlide() {
+        currentHeroIdx = (currentHeroIdx + 1) % heroSlides.length;
+        updateHeroDOM();
+      }
+
+      function prevHeroSlide() {
+        currentHeroIdx = (currentHeroIdx - 1 + heroSlides.length) % heroSlides.length;
+        updateHeroDOM();
+      }
+
+      // Solution Tabs
+      const solutionData = [
+        {
+          tag: 'SOLUTION PILLAR 01',
+          title: '대부도 자연 자원 × 다문화 네트워크의 완벽한 융합',
+          subtitle: '해안길 오션 웰니스와 글로벌 힐링 문화의 하모니',
+          desc: '대부도의 숨겨진 해안길 오션 웰니스와 지역 다문화 공동체가 보유한 이색 미식·허브 티 테라피 문화를 유기적으로 결합했습니다. 국내 어디서도 경험할 수 없었던 독창적인 치유 프로그램을 제공합니다.',
+          highlights: [
+            '단독 해안 오션 프라이빗 워킹 & 사운드 테라피',
+            '다문화 아티잔 공동체와의 독점적 힐링 협업',
+            '바다 바람과 로컬 약초를 활용한 시그니처 블렌딩'
+          ],
+          metricLabel: '차별화 지수',
+          metricVal: '100% 독점 코스'
+        },
+        {
+          tag: 'SOLUTION PILLAR 02',
+          title: 'AI 맞춤형 큐레이션 & 감성 컨시어지',
+          subtitle: '초개인화 알고리즘 기반의 여정 및 영양 밸런스 설계',
+          desc: '생성형 AI 기술을 바탕으로 고객의 체질, 스트레스 지수, 식습관 및 동행인의 취향을 다각도로 정밀 분석합니다. 불필요한 동선을 제거하고 온전한 쉼에 몰입할 수 있는 최적의 힐링 스케줄을 도출합니다.',
+          highlights: [
+            '방문 전 AI 라이프스타일 문진 및 감성 분석',
+            '개인별 맞춤 허브차 & 다이닝 메뉴 추천',
+            '실시간 컨시어지의 유연한 일정 조율 지원'
+          ],
+          metricLabel: '개인화 적합도',
+          metricVal: '1:1 초정밀 설계'
+        },
+        {
+          tag: 'SOLUTION PILLAR 03',
+          title: '원가 관리 및 정밀 설계를 통한 하이엔드 가치 창출',
+          subtitle: '6년 제조·회계 역량으로 실현한 투명하고 알찬 럭셔리',
+          desc: '6년 이상의 제조기업 자재·원가 관리 및 전문 회계 실무 역량을 투어 디렉팅에 이식했습니다. 과도한 유통 거품과 형식적인 낭비 요소를 전면 배제하고, 서비스 품질과 순수 힐링 경험에만 집중 투자합니다.',
+          highlights: [
+            '불필요한 중개 수수료 제로화 및 원가 최적화',
+            '모든 비용을 VIP 전용 프라이빗 케어와 식재료에 투입',
+            '투명하고 정직한 가격 대비 극대화된 하이엔드 만족도'
+          ],
+          metricLabel: '가치 밀도',
+          metricVal: '실속형 럭셔리 실현'
+        }
+      ];
+
+      function switchSolution(idx) {
+        for (let i = 0; i < 3; i++) {
+          const btn = document.getElementById('solBtn' + i);
+          if (i === idx) {
+            btn.className = 'px-5 py-3 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 bg-[#0A4D4E] text-white shadow-md';
+          } else {
+            btn.className = 'px-5 py-3 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 bg-white text-stone-600 hover:text-stone-900 border border-stone-200';
+          }
+        }
+        const data = solutionData[idx];
+        document.getElementById('solPillarTag').textContent = data.tag;
+        document.getElementById('solTitle').textContent = data.title;
+        document.getElementById('solSubtitle').textContent = data.subtitle;
+        document.getElementById('solDesc').textContent = data.desc;
+        document.getElementById('solMetricLabel').textContent = data.metricLabel;
+        document.getElementById('solMetricValue').textContent = data.metricVal;
+
+        const hlBox = document.getElementById('solHighlights');
+        hlBox.innerHTML = data.highlights.map(h => `
+          <div class="flex items-start gap-3">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-[#0A4D4E] shrink-0 mt-0.5"></i>
+            <span class="text-xs sm:text-sm text-stone-700 font-medium">${h}</span>
+          </div>
+        `).join('');
+
+        if (window.lucide) lucide.createIcons();
+      }
+
+      // AI Itinerary Data
+      const itineraryThemes = [
+        [
+          { time: '10:30', title: '웰컴 리추얼 & AI 문진', desc: '대부도 솔향 머금은 웰컴 티와 건강 지표 측정' },
+          { time: '12:00', title: '다문화 융합 웰니스 오찬', desc: '서해 신선 식재료와 저염 허브 파인다이닝 5코스' },
+          { time: '14:30', title: 'VIP 단독 하이드로 스파', desc: '외부 시선 차단된 인피니티 스파 & 미네랄 테라피' },
+          { time: '17:00', title: '석양 명상 & 아로마 티', desc: '서해안 붉은 낙조를 바라보며 즐기는 블렌딩 티' },
+          { time: '18:30', title: 'AI 헌정 영상 시사회', desc: '당일 제작된 시네마틱 쇼츠 및 기프트 전달' },
+        ],
+        [
+          { time: '11:00', title: '로컬 푸드 아틀리에 투어', desc: '대부도 로컬 해양 자원 및 식재료 스토리텔링' },
+          { time: '12:30', title: '마스터 셰프 7코스 갈라', desc: '셰프가 테이블 앞에서 직접 시연하는 융합 미식' },
+          { time: '15:00', title: '오가닉 티 클래스', desc: '나만의 체질에 맞춘 시그니처 힐링 티 블렌딩' },
+          { time: '17:00', title: '선셋 와인 & 어쿠스틱', desc: '무알콜 와인과 프라이빗 핑거푸드 라운지' },
+          { time: '18:30', title: 'AI 힐링 레시피 북 수령', desc: '가정에서도 재현할 수 있는 맞춤 레시피 증정' },
+        ],
+        [
+          { time: '13:00', title: '해안 솔숲 노르딕 워킹', desc: '피톤치드와 해풍을 동시에 누리는 프라이빗 트레킹' },
+          { time: '15:00', title: '온천 스파 & 사운드 바스', desc: '싱잉볼 사운드 진동과 따뜻한 온천수의 조화' },
+          { time: '17:00', title: '서해 낙조 헌정 티 세레머니', desc: '수평선 너머로 저무는 해를 감상하는 침묵의 힐링' },
+          { time: '18:30', title: '달빛 오션 캔들 디너', desc: '로맨틱한 분위기의 프리미엄 로컬 해산물 요리' },
+          { time: '20:00', title: 'AI 시네마틱 헌정 필름', desc: '감성적인 영화 한 편처럼 완성된 VIP 맞춤 영상' },
+        ]
+      ];
+
+      function renderItinerary(idx) {
+        const container = document.getElementById('itinStepsContainer');
+        const list = itineraryThemes[idx];
+        container.innerHTML = list.map((item, i) => `
+          <div class="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col justify-between hover:bg-white/10 transition-colors">
+            <div>
+              <div class="flex items-center gap-1.5 text-[#D4AF37] font-mono text-xs font-bold mb-2">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                <span>${item.time}</span>
+              </div>
+              <h4 class="text-xs sm:text-sm font-bold text-white mb-1.5 font-serif-kr">${item.title}</h4>
+              <p class="text-[11px] text-stone-400 font-light leading-relaxed">${item.desc}</p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-white/5 text-[10px] text-[#D4AF37]/80 font-mono text-right">
+              STEP 0${i + 1}
+            </div>
+          </div>
+        `).join('');
+
+        for (let t = 0; t < 3; t++) {
+          const tab = document.getElementById('itinTab' + t);
+          if (t === idx) {
+            tab.className = 'px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer bg-[#0A4D4E] text-white border border-[#D4AF37]';
+          } else {
+            tab.className = 'px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer bg-white/10 text-stone-300 hover:bg-white/20';
+          }
+        }
+
+        if (window.lucide) lucide.createIcons();
+      }
+
+      function switchItinerary(idx) {
+        renderItinerary(idx);
+      }
+
+      // Team Size Calculator
+      function setCalcSize(size) {
+        [4, 5, 6].forEach(s => {
+          const btn = document.getElementById('sizeBtn' + s);
+          if (s === size) {
+            btn.className = 'px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#0A4D4E] text-white';
+          } else {
+            btn.className = 'px-4 py-2 rounded-lg text-xs font-bold transition-all text-stone-600 hover:text-stone-900';
+          }
+        });
+        document.getElementById('calcTitle').textContent = `우리 팀(${size}인) 예상 비용 & 절감 혜택 계산기`;
+        const reg = size * 500000;
+        const early = size * 350000;
+        const sav = reg - early;
+        document.getElementById('calcRegular').textContent = reg.toLocaleString() + '원';
+        document.getElementById('calcEarly').textContent = early.toLocaleString() + '원';
+        document.getElementById('calcSavings').textContent = sav.toLocaleString() + '원 절감!';
+      }
+
+      // Inquiry Form Submit
+      function handleInquirySubmit(e) {
+        e.preventDefault();
+        document.getElementById('inquiryForm').classList.add('hidden');
+        document.getElementById('inquirySuccess').classList.remove('hidden');
+      }
+
+      function resetInquiryForm() {
+        document.getElementById('inquiryForm').reset();
+        document.getElementById('inquiryForm').classList.remove('hidden');
+        document.getElementById('inquirySuccess').classList.add('hidden');
+      }
+
+      // Booking Modal
+      let modalPartySize = 4;
+
+      function openBookingModal() {
+        document.getElementById('bookingModal').classList.remove('hidden');
+        document.getElementById('modalStep1').classList.remove('hidden');
+        document.getElementById('modalStep2').classList.add('hidden');
+        document.getElementById('modalTitle').textContent = '대부도 VIP 프라이빗 투어 신청';
+        document.getElementById('modalSubtitle').textContent = '선착순 5팀 한정 30% 특별 할인 (1인 350,000원) + AI 헌정 영상';
+        if (window.lucide) lucide.createIcons();
+      }
+
+      function closeBookingModal() {
+        document.getElementById('bookingModal').classList.add('hidden');
+      }
+
+      function setModalParty(size) {
+        modalPartySize = size;
+        [4, 5, 6].forEach(s => {
+          const btn = document.getElementById('modalParty' + s);
+          if (s === size) {
+            btn.className = 'py-2 rounded-xl text-xs font-semibold border transition-all bg-[#0A4D4E] text-white border-[#0A4D4E]';
+          } else {
+            btn.className = 'py-2 rounded-xl text-xs font-semibold border transition-all bg-stone-50 text-stone-700 border-stone-200';
+          }
+        });
+        document.getElementById('modalSummaryParty').textContent = size;
+        document.getElementById('modalSummaryTotal').textContent = (size * 350000).toLocaleString() + '원';
+      }
+
+      function handleModalSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('modalName').value;
+        const theme = document.getElementById('modalTheme').value;
+        const code = 'VIP-' + Math.floor(100000 + Math.random() * 900000);
+
+        document.getElementById('confNameTitle').textContent = `${name}님, VIP 투어 신청이 완료되었습니다!`;
+        document.getElementById('confCode').textContent = code;
+        document.getElementById('confParty').textContent = `${modalPartySize}인 프라이빗 팀`;
+        document.getElementById('confTheme').textContent = theme;
+        document.getElementById('confTotal').textContent = (modalPartySize * 350000).toLocaleString() + '원';
+
+        document.getElementById('modalStep1').classList.add('hidden');
+        document.getElementById('modalStep2').classList.remove('hidden');
+        document.getElementById('modalTitle').textContent = '예약 접수 완료';
+        document.getElementById('modalSubtitle').textContent = '웰니스 투어 디렉터가 1:1 맞춤 일정을 준비합니다.';
+
+        if (window.lucide) lucide.createIcons();
+      }
+
+      // Close modal on Escape
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeBookingModal();
+      });
+    </script>
+  </body>
+</html>
